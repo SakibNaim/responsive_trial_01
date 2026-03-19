@@ -30,6 +30,12 @@
 
 
 /* header  section */
+
+.herohd{
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    
+}
 .navbar {
     justify-content: space-between;
     align-items: center;
@@ -61,6 +67,7 @@
 
 .banner-png{
     width: 100%;
+    
 }
 
 .banner-contant{
@@ -72,18 +79,74 @@
 
 .banner-des{
     color: #727272;
-    font-size: 16px;
+    font-size: 1rem;
+}
+
+/* main section started */
+main{
+     max-width: 1100px;
+      margin: 0 auto;
+    
+}
+
+main > section{
+    margin-bottom: 130px;
+    margin-top: 85px;
 }
 
 
 
+.img-left{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.img-ft{
+    width: 300px;
+}
+
+.f-img-right{
+    margin-left: 70px;
+   
+}
+
+.features{
+    align-items: center;
+}
+
+.ft-title{
+    font-size: 2.80rem;
+}
+
+.ck{
+    color: #727272;
+}
+.dk{
+    color: #FF900E;
+}
+
+.title-des{
+    font-size: 1rem;
+    color: #727272;
+}
 
 /* responsive section */
 
 @media screen and (max-width:776px) {
 
-    .navbar,.nav-links{
+    .navbar,.nav-links,
+    .features{
         flex-direction: column;
+    }
+
+    .img-left{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .f-img-right{
+        /* margin: 0 auto; */
+        margin-left: 15px;
     }
 
     
